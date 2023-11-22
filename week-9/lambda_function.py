@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-# import tensorflow.lite as tflite
 
 import tflite_runtime.interpreter as tflite
 from keras_image_helper import create_preprocessor
