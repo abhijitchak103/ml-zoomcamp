@@ -161,3 +161,7 @@ cython_debug/
 
 # .sh files
 *.sh
+
+# Model files
+*.h5
+*.tflite
