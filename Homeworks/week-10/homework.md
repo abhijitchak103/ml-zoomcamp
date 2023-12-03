@@ -212,7 +212,7 @@ The output should be similar to the next:
 
 ```bash
 NAME              REFERENCE                TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
-credit-hpa   Deployment/credit   1%/20%    1         3         1          27s
+credit-hpa   Deployment/credit             1%/20%    1         3         1          27s
 ```
 
 `TARGET` column shows the average CPU consumption across all the Pods controlled by the corresponding deployment.
@@ -239,32 +239,6 @@ while True:
 
 Now you can run this script.
 
-
-## Question 7 (optional)
-
-Run `kubectl get hpa credit-hpa --watch` command to monitor how the autoscaler performs. 
-Within a minute or so, you should see the higher CPU load; and then - more replicas. 
-What was the maximum amount of the replicas during this test?
+- Note: q6_test.py returns an error after adding the above code snippet.
 
 
-* 1
-* 2
-* 3
-* 4
-
-> Note: It may take a few minutes to stabilize the number of replicas. Since the amount of load is not controlled 
-> in any way it may happen that the final number of replicas will differ from initial.
-
-
-## Submit the results
-
-* Submit your results here: https://forms.gle/35gEVapd3uBoExFW7
-* You can submit your solution multiple times. In this case, only the last submission will be used 
-* If your answer doesn't match options exactly, select the closest one
-
-
-## Deadline
-
-The deadline for submitting is **4 December 2022 (Monday), 23:00 CET (Berlin time)**. 
-
-After that, the form will be closed.
