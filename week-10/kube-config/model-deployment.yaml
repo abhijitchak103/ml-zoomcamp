@@ -17,7 +17,7 @@ spec:
         image: zoomcamp-10-model:xception-v4-001
         resources:
           limits:
-            memory: "512Mi"
-            cpu: "1"
+            memory: "1024Mi"
+            cpu: "0.5"
         ports:
         - containerPort: 8500
